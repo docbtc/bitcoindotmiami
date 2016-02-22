@@ -1,7 +1,7 @@
 # This application was generated with Rails Composer
 
 development:
-  apps4: rails-mailinglist-activejob
+  apps4: rails-bootstrap
   announcements: none
   dev_webserver: puma
   prod_webserver: puma
@@ -12,7 +12,7 @@ development:
   frontend: bootstrap3
   email: none
   authentication: false
-  devise_modules: 
+  devise_modules: false
   omniauth_provider: 
   authorization: false
   form_builder: simple_form
