@@ -10,3 +10,16 @@ body {
   font-weight: 700;
   font-style: italic;
 }
+
+.navbar-teal {
+  background-color: #5ED4C4;
+  color: #666;
+    a {
+      color: #444;
+    }
+}
+
+a > b {
+  color: #fff;
+  font-size: 2em;
+}
