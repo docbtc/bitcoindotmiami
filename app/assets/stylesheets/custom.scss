@@ -24,3 +24,11 @@ a > b {
   color: #fff;
   font-size: 2em;
 }
+
+.nav > li > a {
+  color: #fff;
+}
+
+.nav > li > a:hover {
+  background: #444;
+}
