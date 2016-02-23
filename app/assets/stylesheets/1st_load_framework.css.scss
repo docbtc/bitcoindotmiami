@@ -78,15 +78,46 @@ a > b {
 
 .navbar {
   border-bottom: 0;
+  min-height: 80px;
+}
+
+.navbar-fixed-top {
+  border-width: 15px 0px 1px
 }
 
 // landing page styles
 
 #landing-box {
-    max-width: 50%;
-    border-radius: 0;
-    position: static;
-    margin-left: -5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 50%;
+  border-radius: 0;
+  position: static;
+  margin-left: -5px;
+  margin-top: -20px;
+  height: 91.7vh;
+}
+
+.landing-page {
+  background-image: url(http://www.bet.com/content/betcom/music/photos/2015/12/10-dj-khaled-s-keys-to-success/_jcr_content/image.custom1200x675x20.dimg/121815-Music-10-DJ-Khaleds-Keys-to-Success-Key-Dade-County.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+// button styles
+
+.btn-ghost {
+  background-color: transparent;
+  border: 1px solid #444;
+  color: #444;
+}
+
+.btn-ghost:active {
+  background-color: rgba(0,0,0,.1);
+}
+
+
+.btn-ghost:hover {
+  background-color: rgba(0,0,0,.1);
 }
 
 
