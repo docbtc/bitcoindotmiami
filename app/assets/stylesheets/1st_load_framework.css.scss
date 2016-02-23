@@ -72,6 +72,16 @@ a > b {
   background-color: rgba(0,0,0,.3);
 }
 
+.bitcoin-price:hover {
+  background-color: #fff !important;
+}
+
+.navbar {
+  border-bottom: 0;
+}
+
+
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
