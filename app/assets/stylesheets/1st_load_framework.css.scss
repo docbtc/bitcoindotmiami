@@ -45,7 +45,7 @@ a > b {
 }
 
 .nav > li > a:hover {
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0,0,0,.3);
 }
 
 .nav > li > a:active {
@@ -53,7 +53,7 @@ a > b {
 }
 
 .dropdown > li > a:hover {
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0,0,0,.3);
 }
 
 .dropdown > li > a:active {
@@ -62,6 +62,14 @@ a > b {
 
 .navbar-toggle > span {
   color: #fff;
+}
+
+.navbar-toggle:active {
+  background-color: rgba(0,0,0,.3);
+}
+
+.navbar-toggle:hover {
+  background-color: rgba(0,0,0,.3);
 }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
