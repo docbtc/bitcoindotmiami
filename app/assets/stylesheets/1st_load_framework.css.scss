@@ -2,15 +2,67 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// import google fonts
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:700italic,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300,300italic);
+
+body {
+  font-family: 'Lato';
+  font-weight: 200;
+}
+
 // make all images responsive by default
 img {
   @extend .img-responsive;
   margin: 0 auto;
-  }
+}
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
+}
+
+.logo-btcmiami {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navbar-teal {
+  background-color: #5ED4C4;
+  color: #666;
+  a {
+    color: #444;
   }
+}
+
+a > b {
+  color: #fff;
+  font-size: 2em;
+}
+
+.nav > li > a {
+  color: #fff;
+}
+
+.nav > li > a:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+.nav > li > a:active {
+  background-color: rgba(0,0,0,.3);
+}
+
+.dropdown > li > a:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+.dropdown > li > a:active {
+  background-color: rgba(0,0,0,.3);
+}
+
+.navbar-toggle > span {
+  color: #fff;
+}
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
@@ -18,19 +70,19 @@ img {
 .column {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
 .form {
   @extend .col-md-6;
-  }
+}
 .form-centered {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
 .submit {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-lg;
-  }
+}
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
@@ -39,8 +91,8 @@ main {
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
-  }
+}
 section {
   @extend .row;
   margin-top: 20px;
-  }
+}
