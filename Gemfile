@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'dotenv-rails'
 gem 'gibbon'
+gem 'devise'
 group :development, :test do
   gem 'byebug'
 end
