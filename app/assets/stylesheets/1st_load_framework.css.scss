@@ -42,35 +42,40 @@ a > b {
 
 .nav > li > a {
   color: #fff;
+  font-size: .9em;
 }
 
 .nav > li > a:hover {
-  background-color: rgba(0,0,0,.3);
+  background-color: transparent;
 }
 
 .nav > li > a:active {
-  background-color: rgba(0,0,0,.3);
+  background-color: transparent;
 }
 
 .dropdown > li > a:hover {
-  background-color: rgba(0,0,0,.3);
+  background-color: transparent;
 }
 
 .dropdown > li > a:active {
-  background-color: rgba(0,0,0,.3);
+  background-color: transparent;
 }
 
 .navbar-toggle > span {
   color: #fff;
 }
 
+// mobile nav button pseudo styles
+
 .navbar-toggle:active {
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(243, 156, 18,.9);
 }
 
 .navbar-toggle:hover {
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(243, 156, 18,.9);
 }
+
+// bitcoin-price styles
 
 .bitcoin-price:hover {
   background-color: transparent !important;
@@ -78,17 +83,23 @@ a > b {
 
 #bitcoinPrice {
   background-color: #fff !important;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: absolute;
-  right: 0;
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+  position: absolute !important;
+  right: 0 !important;
   top: 0;
-  bottom: 0;
+  bottom: 0 !important;
 }
+
+// navbar overrides
 
 .navbar {
   border-bottom: 0;
   min-height: 70px;
+}
+
+.navbar-right {
+  margin-right: 100px;
 }
 
 // landing page styles
@@ -166,13 +177,18 @@ small {
 
 // media queries
 
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar-brand {
       margin-left:40%;
   }
+  #bitcoinPrice {
+    top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-@media (max-width: 468px) {
+@media screen and (max-width: 468px) {
   .navbar-brand {
       margin-left:20%;
   }
