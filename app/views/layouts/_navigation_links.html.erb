@@ -8,7 +8,22 @@
 <li>
   <%= link_to 'Blog', page_path('blog-home-1') %>
 </li>
+<li>
+  <% if user_signed_in? %>
+    Logged in as <strong><%= current_user.email %></strong>.
+    <%= link_to 'Edit profile', edit_user_registration_path %>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete  %>
+  <% else %>
+    <li>
+      <%= link_to "Login", new_user_session_path  %>
+    </li>
+    <li>
+      <%= link_to "Sign up", new_user_registration_path %>
+    </li>
+  <% end %>
+</li>
 <li id="bitcoinPrice" style="background-color:#fff !important; padding-left:15px;padding-right:15px;">
   <!-- Bitcoin Price Displayed here -->
-  <a href="#" class="bitcoin-price" style="color:#444 !important;">USD</a>
+  <a href="#" class="bitcoin-price" style="color:#444 !important;"><small>USD/24hr <i class="fa fa-caret-up" style="color:#2ecc71 !important;"></i>
+</small><br><span><!-- bitcoin-price call here sample for now --> <strong>$420.42</strong></span></a>
 </li>
