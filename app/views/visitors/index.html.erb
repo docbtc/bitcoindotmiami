@@ -1,4 +1,4 @@
-<!-- Header Carousel -->
+<!-- Landing Page Content -->
 <header id="landing" class="landing-page">
   <section class="container" style="height: 89vh;">
       <aside id="landing-box" class="jumbotron container" style="padding-top: 27vh;">
@@ -16,113 +16,144 @@
   </section>
 </header>
 
-<!-- Page Content -->
-<div class="container">
-
-    <!-- Marketing Icons Section -->
+<!-- Main Page Content -->
+<!-- <div class="container"> -->
+  <!-- welcome message section -->
+  <section class="welcome-msg container" style="padding-top:40px;">
     <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">
-                Welcome to Modern Business
-            </h1>
+      <div class="col-md-6" style="margin-bottom:70px;">
+        <%= image_tag 'blockchain-tree.png', style: 'max-width:150px;float:left;padding:15px;' %>
+        <h3 class="title">
+          Welcome to bitcoin.miami
+        </h3>
+        <p class="lead">Your local bitcoin resource.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4><i class="fa fa-fw fa-btc"></i> Buy Bitcoin in Miami, FL</h4>
+          </div>
+          <div class="panel-body">
+            <p> Are you looking for the safest and quickest way to buy Bitcoin with cash in Miami? Check out these resources for more information. </p>
+            <a href="https://bitstop.co" class="btn btn-default">Learn More</a>
+          </div>
         </div>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
-                </div>
-                <div class="panel-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                    <a href="#" class="btn btn-default">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
-                </div>
-                <div class="panel-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                    <a href="#" class="btn btn-default">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
-                </div>
-                <div class="panel-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                    <a href="#" class="btn btn-default">Learn More</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
     <!-- /.row -->
+  </section>
 
-    <!-- Portfolio Section -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Portfolio Heading</h2>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <%= link_to page_path('portfolio-item') do %>
-            <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-          <% end %>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <%= link_to page_path('portfolio-item') do %>
-            <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-          <% end %>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <%= link_to page_path('portfolio-item') do %>
-            <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-          <% end %>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <%= link_to page_path('portfolio-item') do %>
-            <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-          <% end %>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <%= link_to page_path('portfolio-item') do %>
-            <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-          <% end %>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <%= link_to page_path('portfolio-item') do %>
-            <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-          <% end %>
-        </div>
+  <!-- Map Section -->
+  <section class="map">
+    <div class="row map-row">
+      <!-- Map Column -->
+      <div class="col-md-12 clear-padding">
+        <!-- Embedded Google Map -->
+        <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+      </div>
     </div>
     <!-- /.row -->
+  </section>
 
+
+<!-- Bitcoin Events Section -->
+  <section style="margin-top: -5px;">
+    <div class="container-fluid" style="background-color:#5ED4C4; padding-top:35px;padding-bottom:40px;">
+      <div class="col-md-12">
+          <h2 class="text-center" style="color:#fff;font-weight:200;">Local Bitcoin Events</h2>
+      </div>
+    </div>
+    <!-- Events -->
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+            <%= link_to page_path('portfolio-item') do %>
+              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+            <% end %>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+            <%= link_to page_path('portfolio-item') do %>
+              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+            <% end %>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+            <%= link_to page_path('portfolio-item') do %>
+              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+            <% end %>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+            <%= link_to page_path('portfolio-item') do %>
+              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+            <% end %>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+            <%= link_to page_path('portfolio-item') do %>
+              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+            <% end %>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+            <%= link_to page_path('portfolio-item') do %>
+              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+            <% end %>
+          </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </section>
+
+  <section class="news-section container-fluid">
     <!-- Features Section -->
     <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Modern Business Features</h2>
+      <div class="container panel panel-default news-panel">
+        <div class="col-md-12">
+          <h2 class="page-header text-center" style="font-weight:200;">Bitcoin News</h2>
         </div>
-        <div class="col-md-6">
-            <p>The Modern Business template by Start Bootstrap includes:</p>
-            <ul>
-                <li><strong>Bootstrap v3.2.0</strong>
-                </li>
-                <li>jQuery v1.11.0</li>
-                <li>Font Awesome v4.1.0</li>
-                <li>Working PHP contact form with validation</li>
-                <li>Unstyled page elements for easy customization</li>
-                <li>17 HTML pages</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+        <div class="col-md-4 article-padding">
+          <small><p><strong>Article Title</strong></p></small>
+          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          </p>
         </div>
-        <div class="col-md-6">
-            <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+        <div class="col-md-4 article-padding">
+          <small><p><strong>Article Title</strong></p></small>
+          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          </p>
         </div>
+        <div class="col-md-4 article-padding">
+          <small><p><strong>Article Title</strong></p></small>
+          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          </p>
+        </div>
+        <div class="col-md-4 article-padding">
+          <small><p><strong>Article Title</strong></p></small>
+          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          </p>
+        </div>
+        <div class="col-md-4 article-padding">
+          <small><p><strong>Article Title</strong></p></small>
+          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          </p>
+        </div>
+        <div class="col-md-4 article-padding">
+          <small><p><strong>Article Title</strong></p></small>
+          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+          </p>
+        </div>
+      </div>
     </div>
     <!-- /.row -->
+  </section>
 
     <hr>
 
@@ -138,7 +169,7 @@
         </div>
     </div>
 
-</div>
+<!-- </div> -->
 <!-- /.container -->
 
 <!-- Script to Activate the Carousel -->

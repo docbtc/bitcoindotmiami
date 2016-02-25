@@ -9,6 +9,7 @@
 body {
   font-family: 'Lato';
   font-weight: 200;
+  overflow-x: hidden;
 }
 
 // make all images responsive by default
@@ -17,6 +18,8 @@ img {
   margin: 0 auto;
 }
 // override for the 'Home' navigation link
+
+// logo styles first
 .navbar-brand {
   font-size: inherit;
 }
@@ -26,6 +29,8 @@ img {
   font-weight: 700;
   font-style: italic;
 }
+
+// nav colors
 
 .navbar-teal {
   background-color: #5ED4C4;
@@ -137,6 +142,41 @@ a > b {
   background-color: rgba(0,0,0,.1);
 }
 
+
+// map section overrides
+
+.map-row { margin-left: 0; margin-right: 0; }
+.map { margin-left: 0; margin-right: 0;}
+.clear-padding {padding-left: 0; padding-right: 0;}
+
+// events sections overrides
+
+.img-portfolio {
+    margin-bottom: 0 !important;
+}
+
+// news section
+
+.news-section {
+  background-image: url(news-section-bg.png);
+  background-repeat: repeat;
+  background-size: 6em;
+  margin-top: 0;
+}
+
+.news-panel {
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  position: relative;
+  top: 7px;
+}
+
+.article-padding {
+  padding: 35px;
+}
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
