@@ -17,5 +17,12 @@
     <%= render 'layouts/messages' %>
     <%= yield %>
     <%= render 'layouts/footer' %>
+    <div class="container">
+      <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>">
+        <%= value %>
+      </div>
+      <% end %>
+    </div>
   </body>
 </html>
