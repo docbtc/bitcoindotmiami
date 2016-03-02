@@ -16,21 +16,21 @@
 
  @font-face {
      font-family: 'Gotham-Light';
-     src:url('assets/Gotham-Light.otf') format('truetype');
+     src: asset-url('fonts/Gotham-Light.otf') format('truetype');
  }
  @font-face {
      font-family: 'Gotham-Medium';
-     src:url('assets/Gotham-Medium.otf') format('truetype');
+     src: asset-url('fonts/Gotham-Medium.otf') format('truetype');
  }
  @font-face {
      font-family: 'Gotham-MediumItalic';
-     src:url('assets/Gotham-MediumItalic.otf') format('truetype');
+     src: asset-url('fonts/Gotham-MediumItalic.otf') format('truetype');
  }
  @font-face {
      font-family: 'Gotham-Thin';
-     src:url('assets/Gotham-Thin.otf') format('truetype');
+     src: asset-url('fonts/Gotham-Thin.otf') format('truetype');
  }
  @font-face {
      font-family: 'Gotham-ThinItalic';
-     src:url('assets/Gotham-ThinItalic.otf') format('truetype');
+     src: asset-url('fonts/Gotham-ThinItalic.otf') format('truetype');
  }
