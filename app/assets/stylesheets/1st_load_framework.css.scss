@@ -6,6 +6,12 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:700italic,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300,300italic);
 
+// color variables
+
+$teal: #5ED4C4;
+$light-black: #444;
+$off-white: #FDFDFD;
+
 body {
   font-family: 'Gotham-Light';
   font-weight: 200;
@@ -33,7 +39,7 @@ img {
 // nav colors
 
 .navbar-teal {
-  background-color: #5ED4C4;
+  background-color: $teal;
   color: #666;
   a {
     color: #444;
@@ -183,11 +189,44 @@ a > b {
   box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.23);
   position: relative;
   top: 7px;
-  background-color: #FDFDFD;
+  background-color: $off-white;
 }
 
 .article-padding {
   padding: 35px;
+}
+
+// resources section
+
+.resources {
+  background-color: $teal;
+  color:#fff;
+}
+
+.resource-header {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.resource-list {
+  position: relative;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.resource-item {
+  padding: 10px;
+}
+
+.no-list {
+  list-style: none;
+}
+
+// text-left override
+
+.text-left {
+  position: relative;
+  bottom: 20px;
 }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
