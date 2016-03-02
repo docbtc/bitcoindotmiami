@@ -22,5 +22,8 @@ module Bitcoindotmiami
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Allows fonts in asset pipeline. To remove just comment out and delete fonts folder in assets.
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
 end

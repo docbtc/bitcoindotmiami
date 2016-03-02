@@ -7,7 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300,300italic);
 
 body {
-  font-family: 'Lato';
+  font-family: 'Gotham-Light';
   font-weight: 200;
   overflow-x: hidden;
 }
@@ -82,9 +82,18 @@ a > b {
 
 // bitcoin-price styles
 
+.bitcoin-price:active {
+  background-color: transparent !important;
+}
+
+.bitcoin-price:visited {
+  background-color: transparent !important;
+}
+
 .bitcoin-price:hover {
   background-color: transparent !important;
 }
+
 
 #bitcoinPrice {
   background-color: #fff !important;
@@ -162,16 +171,19 @@ a > b {
   background-repeat: repeat;
   background-size: 6em;
   margin-top: 0;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .news-panel {
   border-radius: 0;
   border: none;
-  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.23);
+  box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.23);
   position: relative;
   top: 7px;
+  background-color: #FDFDFD;
 }
 
 .article-padding {
