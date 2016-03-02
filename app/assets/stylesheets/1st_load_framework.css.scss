@@ -222,11 +222,32 @@ a > b {
   list-style: none;
 }
 
-// text-left override
+// call to action mailer
+
+.mailer-footer {
+  background:
+  /* top, transparent teal, faked with gradient */
+  linear-gradient(
+   rgba(204,234,222,0.76),
+   rgba(204,234,222,0.76)
+  ),
+  /* bottom, image */
+  url(mailer-footer.png);
+  height: 170px;
+  color: $light-black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+// other overrides
 
 .text-left {
   position: relative;
   bottom: 20px;
+}
+
+.top-clear {
+  margin-top: 0px;
 }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
