@@ -25,5 +25,7 @@ module Bitcoindotmiami
 
     # Allows fonts in asset pipeline. To remove just comment out and delete fonts folder in assets.
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
+    config.assets.precompile += %w( .svg .eot .woff .ttf .otf)
   end
 end
