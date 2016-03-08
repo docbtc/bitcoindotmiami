@@ -8839,103 +8839,123 @@ button.close {
     display: none !important;
   }
 }
-/* line 15, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url("Gotham-Light.otf") format("truetype");
+}
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url("Gotham-Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: 'Gotham-MediumItalic';
+  src: url("Gotham-MediumItalic.otf") format("truetype");
+}
+@font-face {
+  font-family: 'Gotham-Thin';
+  src: url("Gotham-Thin.otf") format("truetype");
+}
+@font-face {
+  font-family: 'Gotham-ThinItalic';
+  src: url("Gotham-ThinItalic.otf") format("truetype");
+}
+/* line 36, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 body {
   font-family: 'Gotham-Light','Lato', Arial, sans-serif;
   font-weight: 200;
   overflow-x: hidden;
 }
 
-/* line 22, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 43, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 img {
   margin: 0 auto;
 }
 
-/* line 29, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 50, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar-brand {
   font-size: inherit;
 }
 
-/* line 33, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 54, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .logo-btcmiami {
   font-family: 'Ubuntu';
   font-weight: 700;
   font-style: italic;
 }
 
-/* line 41, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 62, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar-teal {
   background-color: #5ED4C4;
   color: #666;
 }
-/* line 44, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 65, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar-teal a {
   color: #444;
 }
 
-/* line 49, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 70, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 a > b {
   color: #fff;
   font-size: 2em;
 }
 
-/* line 54, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 75, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .nav > li > a {
   color: #fff;
   font-size: .9em;
 }
 
-/* line 59, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 80, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .nav > li > a:hover {
   background-color: transparent;
 }
 
-/* line 63, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 84, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .nav > li > a:active {
   background-color: transparent;
 }
 
-/* line 67, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 88, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .dropdown > li > a:hover {
   background-color: transparent;
 }
 
-/* line 71, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 92, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .dropdown > li > a:active {
   background-color: transparent;
 }
 
-/* line 75, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 96, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar-toggle > span {
   color: #fff;
 }
 
-/* line 81, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 102, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar-toggle:active {
   background-color: rgba(243, 156, 18, 0.9);
 }
 
-/* line 85, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 106, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar-toggle:hover {
   background-color: rgba(243, 156, 18, 0.9);
 }
 
-/* line 91, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 112, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .bitcoin-price:active {
   background-color: transparent !important;
 }
 
-/* line 95, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 116, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .bitcoin-price:visited {
   background-color: transparent !important;
 }
 
-/* line 99, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 120, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .bitcoin-price:hover {
   background-color: transparent !important;
 }
 
-/* line 104, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 125, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 #bitcoinPrice {
   background-color: #fff !important;
   padding-left: 35px !important;
@@ -8946,76 +8966,77 @@ a > b {
   bottom: 0 !important;
 }
 
-/* line 116, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 137, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar {
   border-bottom: 0;
   min-height: 70px;
+  margin-bottom: 0px;
 }
 
-/* line 121, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 143, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar-right {
   margin-right: 100px;
 }
 
-/* line 127, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 149, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 #landing-box {
   background-color: rgba(255, 255, 255, 0.7);
   max-width: 50%;
   border-radius: 0;
   position: static;
-  margin-left: -5px;
+  margin-right: -5px;
   margin-top: -20px;
   height: 91.7vh;
 }
 
-/* line 137, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 159, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .landing-page {
-  background-image: url(http://www.bet.com/content/betcom/music/photos/2015/12/10-dj-khaled-s-keys-to-success/_jcr_content/image.custom1200x675x20.dimg/121815-Music-10-DJ-Khaleds-Keys-to-Success-Key-Dade-County.jpg);
+  background-image: url(bitcoindotmiami_landing.jpg);
   background-position: center;
   background-size: cover;
 }
 
-/* line 145, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 167, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .btn-ghost {
   background-color: transparent;
   border: 1px solid #444;
   color: #444;
 }
 
-/* line 151, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 173, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .btn-ghost:active {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 156, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 178, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .btn-ghost:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 163, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 185, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .map-row {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 164, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 186, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .map {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 165, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 187, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .clear-padding {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 169, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 191, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .img-portfolio {
   margin-bottom: 0 !important;
 }
 
-/* line 175, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 197, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .news-section {
   background-image: url(news-section-bg.png);
   background-repeat: repeat;
@@ -9025,7 +9046,7 @@ a > b {
   padding-bottom: 40px;
 }
 
-/* line 184, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 206, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .news-panel {
   border-radius: 0;
   border: none;
@@ -9037,41 +9058,41 @@ a > b {
   background-color: #FDFDFD;
 }
 
-/* line 195, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 217, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .article-padding {
   padding: 35px;
 }
 
-/* line 201, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 223, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .resources {
   background-color: #5ED4C4;
   color: #fff;
 }
 
-/* line 206, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 228, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .resource-header {
   padding-top: 55px;
   padding-bottom: 55px;
 }
 
-/* line 211, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 233, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .resource-list {
   position: relative;
   text-align: center;
   padding-bottom: 40px;
 }
 
-/* line 217, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 239, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .resource-item {
   padding: 10px;
 }
 
-/* line 221, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 243, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .no-list {
   list-style: none;
 }
 
-/* line 227, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 249, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .mailer-footer {
   background: linear-gradient(rgba(204, 234, 222, 0.76), rgba(204, 234, 222, 0.76)), url(mailer-footer.png);
   height: 170px;
@@ -9080,18 +9101,18 @@ a > b {
   padding-bottom: 40px;
 }
 
-/* line 244, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 266, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .text-left {
   position: relative;
   bottom: 20px;
 }
 
-/* line 249, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 271, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .top-clear {
   margin-top: 0px;
 }
 
-/* line 274, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 296, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 main {
   background-color: #eee;
   padding-bottom: 80px;
@@ -9099,31 +9120,64 @@ main {
   margin-top: 51px;
 }
 
-/* line 281, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
-section {
-  margin-top: 20px;
-}
-
-/* line 286, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 308, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 small {
   font-size: 70%;
 }
 
+/* line 312, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+.row, section, section {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* line 317, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+.container, main, main {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media screen and (max-width: 767px) {
-  /* line 293, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+  /* line 325, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
   .navbar-brand {
     margin-left: 40%;
   }
 
-  /* line 296, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+  /* line 328, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
   #bitcoinPrice {
     top: 70px;
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  /* line 333, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+  #landing-box {
+    max-width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -100px;
+    height: 107vh;
+  }
+
+  /* line 340, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+  .navbar-fixed-top {
+    position: relative;
+    top: auto;
+  }
+
+  /* line 344, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+  .navbar-collapse {
+    max-height: none;
+  }
+
+  /* line 347, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+  body {
+    margin: 0;
+    padding-top: 0px !important;
+  }
 }
 @media screen and (max-width: 468px) {
-  /* line 304, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+  /* line 354, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
   .navbar-brand {
     margin-left: 20%;
   }
@@ -9138,38 +9192,39 @@ small {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
-/* line 15, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 16, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 body {
   padding-top: 50px;
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-/* line 19, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 20, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 .img-portfolio {
   margin-bottom: 30px;
 }
 
-/* line 23, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 24, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 .img-hover:hover {
   opacity: 0.8;
 }
 
 /* Home Page Carousel */
-/* line 29, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 30, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 header.carousel {
   height: 50%;
 }
 
-/* line 33, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 34, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
   height: 100%;
 }
 
-/* line 39, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 40, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 header.carousel .fill {
   width: 100%;
   height: 100%;
@@ -9178,53 +9233,53 @@ header.carousel .fill {
 }
 
 /* 404 Page Styles */
-/* line 48, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 49, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 .error-404 {
   font-size: 100px;
 }
 
 /* Pricing Page Styles */
-/* line 54, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 55, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 .price {
   display: block;
   font-size: 50px;
   line-height: 50px;
 }
 
-/* line 60, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 61, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 .price sup {
   top: -20px;
   left: 2px;
   font-size: 20px;
 }
 
-/* line 66, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 67, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 .period {
   display: block;
   font-style: italic;
 }
 
 /* Footer Styles */
-/* line 73, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+/* line 74, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
 footer {
   margin: 50px 0;
 }
 
 /* Responsive Styles */
 @media (max-width: 991px) {
-  /* line 80, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+  /* line 81, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
   .customer-img,
   .img-related {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
-  /* line 87, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+  /* line 88, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
   .img-portfolio {
     margin-bottom: 15px;
   }
 
-  /* line 91, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
+  /* line 92, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/modern-business.css.scss */
   header.carousel .carousel {
     height: 70%;
   }
@@ -9244,23 +9299,3 @@ footer {
 
 
  */
-@font-face {
-  font-family: 'Gotham-Light';
-  src: url("fonts/Gotham-Light.otf") format("truetype");
-}
-@font-face {
-  font-family: 'Gotham-Medium';
-  src: url("fonts/Gotham-Medium.otf") format("truetype");
-}
-@font-face {
-  font-family: 'Gotham-MediumItalic';
-  src: url("fonts/Gotham-MediumItalic.otf") format("truetype");
-}
-@font-face {
-  font-family: 'Gotham-Thin';
-  src: url("fonts/Gotham-Thin.otf") format("truetype");
-}
-@font-face {
-  font-family: 'Gotham-ThinItalic';
-  src: url("fonts/Gotham-ThinItalic.otf") format("truetype");
-}
