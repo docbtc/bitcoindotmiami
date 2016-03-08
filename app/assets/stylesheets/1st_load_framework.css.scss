@@ -319,6 +319,11 @@ small {
   padding-right: 0;
 }
 
+.container > .navbar-collapse {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 // media queries
 
 @media screen and (max-width: 767px) {
