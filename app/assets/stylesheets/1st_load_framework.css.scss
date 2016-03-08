@@ -192,6 +192,22 @@ a > b {
     margin-bottom: 0 !important;
 }
 
+p.event-head {
+  position: absolute;
+  top: 65px;
+  text-align: center;
+  color: #fff;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+p.event-body {
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  color: #fff;
+}
+
 // news section
 
 .news-section {

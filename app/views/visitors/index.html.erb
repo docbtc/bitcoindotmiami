@@ -68,14 +68,14 @@
       <div class="row">
           <% @meetup_event.each do |meetup| %>
             <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-            <p>
-              <%= meetup[:name] %>
-            </p>
-            <p>
-              <%= meetup[:location] %>
-            </p>
+              <p class="event-head">
+                <%= meetup[:name] %>
+              </p>
+              <p class="event-body">
+                <small><%= meetup[:location] %></small>
+              </p>
 
-            <%= image_tag meetup[:image] %>
+              <%= image_tag meetup[:image], style: "height:175px;" %>
             </div>
           <% end %>
           <!-- <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
