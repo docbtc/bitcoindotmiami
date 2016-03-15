@@ -1,23 +1,23 @@
 <!-- Landing Page Content -->
 <section id="landing" class="landing-page top-clear">
   <div class="container" style="margin-right: -19px;height: 86vh;">
-      <aside id="landing-box" class="jumbotron container" style="padding-top: 27vh;">
-          <h2 style="font-weight:200;">Welcome to Bitcoin.Miami</h1>
-          <h4 style="font-weight:100;">
-            Your top Bitcoin resource and guide for the Magic City. We strive to bring you diverse content which can range from topics such as the best local spots to enjoy your bitcoin to tips on how to store and keep it your bitcoin safe.
-          </h4>
-          <div style="padding-top:15px;">
-            <input placeholder="Enter E-mail" style="width:75%;height:40px;border-radius:4px;border:transparent;padding:10px;">
-          </div>
-          <div style="padding-top:25px;padding-bottom:;">
-            <button class="btn btn-ghost">JOIN NEWSLETTER</button>
-          </div>
+    <aside id="landing-box" class="jumbotron container" style="padding-top: 27vh;">
+      <h2 style="font-weight:200;">Welcome to Bitcoin.Miami</h1>
+        <h4 style="font-weight:100;">
+          Your top resource and guide for Bitcoin in the Magic City. We strive to bring you diverse content which range from the best local spots to enjoy your bitcoin to tips on how to store and keep them safe in your wallet.
+        </h4>
+        <div style="padding-top:15px;">
+          <input placeholder="Enter E-mail" style="width:75%;height:40px;border-radius:4px;border:transparent;padding:10px;">
+        </div>
+        <div style="padding-top:25px;padding-bottom:;">
+          <button class="btn btn-ghost">JOIN NEWSLETTER</button>
+        </div>
       </aside>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- Main Page Content -->
-<!-- <div class="container"> -->
+  <!-- Main Page Content -->
+  <!-- <div class="container"> -->
   <!-- welcome message section -->
   <section class="welcome-msg container" style="padding-top:40px;">
     <div class="row">
@@ -49,7 +49,7 @@
       <!-- Map Column -->
       <div class="col-md-12 clear-padding">
         <div id="mapid"></div>
-        </div>
+      </div>
     </div>
     <div class="row map-footer text-center">
       <button class="btn btn-ghost" style="border-color:#ececec;margin-top:30px;"><a href="https://bitstop.co" style="color:#ececec !important; text-decoration:none;">BUY BITCOIN</a></button>
@@ -59,270 +59,270 @@
   </section>
 
 
-<!-- Bitcoin Events Section -->
+  <!-- Bitcoin Events Section -->
   <section style="margin-top: -5px;margin-left:-15px;margin-right:-15px;">
     <div class="container-fluid" style="background-color:#5ED4C4; padding-top:35px;padding-bottom:40px;">
       <div class="col-md-12">
-          <h2 class="text-center" style="color:#fff;font-weight:200;">Local Bitcoin Events</h2>
+        <h2 class="text-center" style="color:#fff;font-weight:200;">Local Bitcoin Events</h2>
       </div>
     </div>
     <!-- Events -->
     <div class="container-fluid">
       <div class="row">
-          <% @meetup_event.each do |meetup| %>
-            <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-              <p class="event-head">
-                <%= meetup[:name] %>
-              </p>
-              <p class="event-body">
-                <small><%= meetup[:location] %></small>
-              </p>
+        <% @meetup_event.each do |meetup| %>
+        <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+          <p class="event-head">
+            <%= meetup[:name] %>
+          </p>
+          <p class="event-body">
+            <small><%= meetup[:location] %></small>
+          </p>
 
-              <%= image_tag meetup[:image], class: "img-responsive img-portfolio img-hover", style: "height:175px;" %>
-            </div>
-          <% end %>
-          <!-- <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-            <%= link_to page_path('portfolio-item') do %>
-              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-            <% end %>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-            <%= link_to page_path('portfolio-item') do %>
-              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-            <% end %>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-            <%= link_to page_path('portfolio-item') do %>
-              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-            <% end %>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-            <%= link_to page_path('portfolio-item') do %>
-              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-            <% end %>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-            <%= link_to page_path('portfolio-item') do %>
-              <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-            <% end %>
-          </div> -->
+          <%= image_tag meetup[:image], class: "img-responsive img-portfolio img-hover", style: "height:175px;" %>
+        </div>
+        <% end %>
+        <!-- <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+        <%= link_to page_path('portfolio-item') do %>
+        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+        <% end %>
       </div>
-      <!-- /.row -->
+      <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+      <%= link_to page_path('portfolio-item') do %>
+      <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+      <% end %>
     </div>
-  </section>
+    <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+    <%= link_to page_path('portfolio-item') do %>
+    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+    <% end %>
+  </div>
+  <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+  <%= link_to page_path('portfolio-item') do %>
+  <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+  <% end %>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
+<%= link_to page_path('portfolio-item') do %>
+<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+<% end %>
+</div> -->
+</div>
+<!-- /.row -->
+</div>
+</section>
 
-  <!-- News Section -->
-  <section class="news-section container-fluid">
+<!-- News Section -->
+<section class="news-section container-fluid">
+  <div class="row">
+    <div class="container panel panel-default news-panel">
+      <div class="col-md-12">
+        <h2 class="page-header text-center" style="font-weight:200;">Bitcoin News</h2>
+      </div>
+      <div class="col-md-4 article-padding">
+        <small><p><strong>Article Title</strong></p></small>
+        <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        </p>
+      </div>
+      <div class="col-md-4 article-padding">
+        <small><p><strong>Article Title</strong></p></small>
+        <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        </p>
+      </div>
+      <div class="col-md-4 article-padding">
+        <small><p><strong>Article Title</strong></p></small>
+        <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        </p>
+      </div>
+      <div class="col-md-4 article-padding">
+        <small><p><strong>Article Title</strong></p></small>
+        <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        </p>
+      </div>
+      <div class="col-md-4 article-padding">
+        <small><p><strong>Article Title</strong></p></small>
+        <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        </p>
+      </div>
+      <div class="col-md-4 article-padding">
+        <small><p><strong>Article Title</strong></p></small>
+        <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+</section>
+
+<!-- Resources Section -->
+<section class="resources container-fluid top-clear">
+  <div class="container">
+    <!-- Resource Header -->
+    <div class="row resource-header">
+      <aside class="col-md-6">
+        <p class="lead">
+          Here’s where we keep all of our favorite goodies. Be sure to check back often as we update it with the newest goodness.
+        </p>
+      </aside>
+      <aside class="col-md-6 text-center">
+        <h2>Bitcoin Resources</h2>
+      </aside>
+    </div>
+  </div>
+  <!-- Resource Content -->
+  <div class="row resource-list">
+    <div class="col-md-3">
+      <ul class="no-list">
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul class="no-list">
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul class="no-list">
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul class="no-list">
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+        <li class="resource-item">
+          <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
+          <span class="text-left">
+            <h3 class="item-title">Coindesk</h3>
+            <p class="item-content">This is a description of what coindesk offers as a resource.</p>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Mailer Footer // Call to Action Section -->
+<section class="mailer-footer container-fluid top-clear">
+  <div class="container">
     <div class="row">
-      <div class="container panel panel-default news-panel">
-        <div class="col-md-12">
-          <h2 class="page-header text-center" style="font-weight:200;">Bitcoin News</h2>
-        </div>
-        <div class="col-md-4 article-padding">
-          <small><p><strong>Article Title</strong></p></small>
-          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-          </p>
-        </div>
-        <div class="col-md-4 article-padding">
-          <small><p><strong>Article Title</strong></p></small>
-          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-          </p>
-        </div>
-        <div class="col-md-4 article-padding">
-          <small><p><strong>Article Title</strong></p></small>
-          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-          </p>
-        </div>
-        <div class="col-md-4 article-padding">
-          <small><p><strong>Article Title</strong></p></small>
-          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-          </p>
-        </div>
-        <div class="col-md-4 article-padding">
-          <small><p><strong>Article Title</strong></p></small>
-          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-          </p>
-        </div>
-        <div class="col-md-4 article-padding">
-          <small><p><strong>Article Title</strong></p></small>
-          <small><p style="margin-top:-10px"> Publish Date | <em>www.site.com</em></p></small>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-          </p>
-        </div>
+      <div class="col-md-8">
+        <p class="lead">Bitcoin is going to change the way money works. Setup a wallet today.</p>
+      </div>
+      <div class="col-md-4">
+        <a class="btn btn-lg btn-default btn-block" href="blog.bitstop.co">Setup a wallet today</a>
       </div>
     </div>
-    <!-- /.row -->
-  </section>
-
-  <!-- Resources Section -->
-  <section class="resources container-fluid top-clear">
-    <div class="container">
-      <!-- Resource Header -->
-      <div class="row resource-header">
-        <aside class="col-md-6">
-          <p class="lead">
-            Here’s where we keep all of our favorite goodies. Be sure to check back often as we update it with the newest goodness.
-          </p>
-        </aside>
-        <aside class="col-md-6 text-center">
-          <h2>Bitcoin Resources</h2>
-        </aside>
-      </div>
-    </div>
-    <!-- Resource Content -->
-    <div class="row resource-list">
-      <div class="col-md-3">
-        <ul class="no-list">
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul class="no-list">
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul class="no-list">
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul class="no-list">
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-          <li class="resource-item">
-            <img src="https://index.tnwcdn.com/images/bc695f1b5eecbade7f6961bdb33becf1893078d5.png" style="width:100px; padding-right:20px; padding-bottom: 25px;" class="pull-left">
-            <span class="text-left">
-              <h3 class="item-title">Coindesk</h3>
-              <p class="item-content">This is a description of what coindesk offers as a resource.</p>
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-    <!-- Mailer Footer // Call to Action Section -->
-  <section class="mailer-footer container-fluid top-clear">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <p class="lead">Bitcoin is going to change the way money and the world works.</p>
-            </div>
-            <div class="col-md-4">
-                <a class="btn btn-lg btn-default btn-block" href="blog.bitstop.co">Setup a wallet today</a>
-            </div>
-        </div>
-    </div>
-  </section>
+  </div>
+</section>
