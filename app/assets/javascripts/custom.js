@@ -13,13 +13,23 @@ $(document).ready(function() {
     // false if you want an unruly map
     sleep: true,
 
+    // time(ms) until map sleeps on mouseout
+    sleepTime: 300,
+
+    // time(ms) until map wakes on mouseover
+    wakeTime: 750,
+
     // defines whether the user is prompted on how to wake map
     sleepNote: true,
+
+    // should hovering wake the map?
+    hoverToWake: true,
 
     // specify a custom message to notify users how to wake
     wakeMessage: ('Click ' + 'to find Bitcoin Locations'),
 
     // opacity (between 0 and 1) of inactive map
-    sleepOpacity: 0.7,
+    sleepOpacity: .7,
+
   }).addTo(mymap);
 });

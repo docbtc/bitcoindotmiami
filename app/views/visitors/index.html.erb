@@ -1,6 +1,6 @@
 <!-- Landing Page Content -->
 <section id="landing" class="landing-page top-clear">
-  <div class="container" style="height: 86vh;">
+  <div class="container" style="margin-right: -19px;height: 86vh;">
       <aside id="landing-box" class="jumbotron container" style="padding-top: 27vh;">
           <h2 style="font-weight:200;">Welcome to Bitcoin.Miami</h1>
           <h4 style="font-weight:100;">
@@ -51,6 +51,9 @@
         <div id="mapid"></div>
         </div>
     </div>
+    <div class="row map-footer text-center">
+      <button class="btn btn-ghost" style="border-color:#ececec;margin-top:30px;"><a href="https://bitstop.co" style="color:#ececec !important; text-decoration:none;">BUY BITCOIN</a></button>
+    </div>
 
     <!-- /.row -->
   </section>
@@ -75,7 +78,7 @@
                 <small><%= meetup[:location] %></small>
               </p>
 
-              <%= image_tag meetup[:image], style: "height:175px;" %>
+              <%= image_tag meetup[:image], class: "", style: "height:175px;" %>
             </div>
           <% end %>
           <!-- <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">

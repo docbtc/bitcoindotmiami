@@ -140,7 +140,7 @@ a > b {
 }
 
 .navbar-right {
-  margin-right: 100px;
+  margin-right: 140px;
 }
 
 // landing page styles
@@ -184,11 +184,12 @@ a > b {
 .map-row { margin-left: 0; margin-right: 0; }
 .map { margin-left: 0; margin-right: 0;}
 .clear-padding {padding-left: 0; padding-right: 0;}
+.map-footer { height:100px;background: #F58C8D;}
 
 // map id height
 
 #mapid {
-  height: 300px;
+  height: 420px;
 }
 
 // events sections overrides
@@ -228,8 +229,8 @@ p.event-body {
 .news-panel {
   border-radius: 0;
   border: none;
-  -webkit-box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.23);
-  -moz-box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.23);
   box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.23);
   position: relative;
   top: 7px;
