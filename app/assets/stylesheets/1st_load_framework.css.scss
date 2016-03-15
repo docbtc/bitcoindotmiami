@@ -44,7 +44,6 @@ img {
   @extend .img-responsive;
   margin: 0 auto;
 }
-// override for the 'Home' navigation link
 
 // logo styles first
 .navbar-brand {
@@ -186,6 +185,12 @@ a > b {
 .map { margin-left: 0; margin-right: 0;}
 .clear-padding {padding-left: 0; padding-right: 0;}
 
+// map id height
+
+#mapid {
+  height: 300px;
+}
+
 // events sections overrides
 
 .img-portfolio {
@@ -199,6 +204,7 @@ p.event-head {
   color: #fff;
   padding-left:5px;
   padding-right:5px;
+  padding-bottom: 5px;
 }
 
 p.event-body {
