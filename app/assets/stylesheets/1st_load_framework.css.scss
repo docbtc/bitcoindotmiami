@@ -295,6 +295,16 @@ p.event-body {
   margin-top: 0px;
 }
 
+// footer
+.footer-link { text-decoration:none; color:#333; }
+
+
+.footer-link:hover {
+  text-decoration: none;
+  color: #F58C8D;
+  border-bottom: 1px dotted #5ED4C4;
+}
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
