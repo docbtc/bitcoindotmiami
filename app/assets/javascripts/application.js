@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require leaflet
+//= require Leaflet.Sleep
 //= require_tree .
