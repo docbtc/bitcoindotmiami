@@ -8932,12 +8932,12 @@ a > b {
 
 /* line 101, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar-toggle:active {
-  background-color: rgba(243, 156, 18, 0.9);
+  background-color: rgba(245, 140, 141, 0.9);
 }
 
 /* line 105, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar-toggle:hover {
-  background-color: rgba(243, 156, 18, 0.9);
+  background-color: rgba(245, 140, 141, 0.9);
 }
 
 /* line 111, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
@@ -9230,6 +9230,34 @@ small {
   .navbar-brand {
     margin-left: 20%;
   }
+}
+/* line 397, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+a > .resource-item {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+/* line 402, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+a:hover > .resource-item {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+/* line 406, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+a:visited > .resource-item {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+/* line 410, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+a:active > .resource-item {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+/* line 415, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/1st_load_framework.css.scss */
+a:hover {
+  text-decoration: none !important;
 }
 /* required styles */
 /* line 4, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/leaflet.css.scss */
