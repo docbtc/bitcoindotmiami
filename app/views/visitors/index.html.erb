@@ -60,55 +60,29 @@
 
 
   <!-- Bitcoin Events Section -->
-  <section style="margin-top: -5px;margin-left:-15px;margin-right:-15px; display:none;">
+  <section style="margin-top: -5px;margin-left:-15px;margin-right:-15px;">
     <div class="container-fluid" style="background-color:#5ED4C4; padding-top:35px;padding-bottom:40px;">
       <div class="col-md-12">
-        <h2 class="text-center" style="color:#fff;font-weight:200;">Local Bitcoin Events</h2>
+        <h2 class="text-center" style="color:#fff;font-weight:200;">Local Events</h2>
       </div>
     </div>
     <!-- Events -->
     <div class="container-fluid">
       <div class="row">
-        <%# @meetup_event.each do |meetup| %>
+        <% @meetup_event.each do |meetup| %>
         <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-          <!-- <p class="event-head">
-            <%#= meetup[:name] %>
+          <p class="event-head">
+            <%= meetup[:name] %>
           </p>
           <p class="event-body">
-            <small><%#= meetup[:location] %></small>
-          </p> -->
-          <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450">
-          <%#= image_tag meetup[:image], class: "img-responsive img-portfolio img-hover", style: "height:175px;" %>
+            <small><%= meetup[:location] %></small>
+          </p>
+          <%= image_tag meetup[:image], class: "img-responsive img-portfolio img-hover", style: "height:175px;" %>
         </div>
-        <%# end %>
-        <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-        <%= link_to page_path('portfolio-item') do %>
-        <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
         <% end %>
       </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-      <%= link_to page_path('portfolio-item') do %>
-      <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-      <% end %>
-    </div>
-    <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-    <%= link_to page_path('portfolio-item') do %>
-    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-    <% end %>
-  </div>
-  <div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-  <%= link_to page_path('portfolio-item') do %>
-  <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-  <% end %>
-</div>
-<div class="col-md-2 col-sm-4 col-xs-6 clear-padding">
-<%= link_to page_path('portfolio-item') do %>
-<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-<% end %>
-</div>
-</div>
 <!-- /.row -->
-</div>
+    </div>
 </section>
 
 <!-- News Section -->
