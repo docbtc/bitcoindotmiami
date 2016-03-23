@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
     bitcoin_meetup["results"].each do |result|
       targs = result["description"].split("<img src=\"")
       image = targs[1].split("\" />") rescue ["http://www.andybarratt.co.uk/wp-content/uploads/2013/08/Bitcoin-Coin-1024.jpg"]
-      result = { name: result["name"], location: "#{result['venue']['name']}, #{result['venue']['address_1']}, #{result['venue']['city']}", image: "#{image[0]}" }
+      result = { url: result["event_url"], name: result["name"], location: "#{result['venue']['name']}, #{result['venue']['address_1']}, #{result['venue']['city']}", image: "#{image[0]}" }
       results_set.push(result) if results_set.length < 6
     end
 
@@ -34,7 +34,7 @@ class ApplicationController < ActionController::Base
     bitcoin_meetup["results"].each do |result|
       targs = result["description"].split("<img src=\"")
       image = targs[1].split("\" />") rescue ["http://www.andybarratt.co.uk/wp-content/uploads/2013/08/Bitcoin-Coin-1024.jpg"]
-      result = { name: result["name"], location: "#{result['venue']['name']}, #{result['venue']['address_1']}, #{result['venue']['city']}", image: "#{image[0]}" }
+      result = { url: result["event_url"], name: result["name"], location: "#{result['venue']['name']}, #{result['venue']['address_1']}, #{result['venue']['city']}", image: "#{image[0]}" }
       results_set.push(result) if results_set.length < 6
     end
 
@@ -42,7 +42,7 @@ class ApplicationController < ActionController::Base
     bitcoin_meetup["results"].each do |result|
       targs = result["description"].split("<img src=\"")
       image = targs[1].split("\" />") rescue ["http://www.andybarratt.co.uk/wp-content/uploads/2013/08/Bitcoin-Coin-1024.jpg"]
-      result = { name: result["name"], location: "#{result['venue']['name']}, #{result['venue']['address_1']}, #{result['venue']['city']}", image: "#{image[0]}" }
+      result = { url: result["event_url"], name: result["name"], location: "#{result['venue']['name']}, #{result['venue']['address_1']}, #{result['venue']['city']}", image: "#{image[0]}" }
       results_set.push(result) if results_set.length < 6
     end
 

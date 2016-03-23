@@ -70,7 +70,8 @@
     <div class="container-fluid">
       <div class="row">
         <% @meetup_event.each do |meetup| %>
-        <div class="col-md-2 col-sm-4 col-xs-6 clear-padding" style="height:12em;background: url(<%= meetup[:image] %>);background-size:cover;background-position:center;">
+        <a href="<%= meetup[:url] %>">
+          <div class="col-md-2 col-sm-4 col-xs-6 clear-padding img-hover" style="height:12em;background: url(<%= meetup[:image] %>);background-size:cover;background-position:center;filter: blur(2px);">
           <p class="event-head">
             <%= meetup[:name] %>
           </p>
@@ -79,6 +80,7 @@
           </p>
           <%#= image_tag meetup[:image], class: "img-responsive img-portfolio img-hover", style: "height:175px;" %>
         </div>
+      </a>
         <% end %>
       </div>
 <!-- /.row -->
