@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
     bitcoin_meetup = HTTParty.get "https://api.meetup.com/2/events?&sign=true&photo-host=public&fields=self&group_urlname=Refresh-Miami&page=20"
     bitcoin_meetup["results"].each do |result|
       targs = result["description"].split("<img src=\"")
-      image = targs[1].split("\" />") rescue ["http://www.andybarratt.co.uk/wp-content/uploads/2013/08/Bitcoin-Coin-1024.jpg"]
+      image = targs[1].split("\" />") rescue ["https://unsplash.it/700/450/?random", "https://unsplash.it/g/700/450/"]
       result = { url: result["event_url"], name: result["name"], location: "#{result['venue']['name']}, #{result['venue']['address_1']}, #{result['venue']['city']}", image: "#{image[0]}" }
       results_set.push(result) if results_set.length < 6
     end
@@ -41,8 +41,8 @@ class ApplicationController < ActionController::Base
     bitcoin_meetup = HTTParty.get "https://api.meetup.com/2/events?&sign=true&photo-host=public&fields=self&group_urlname=Code-for-Miami&page=20"
     bitcoin_meetup["results"].each do |result|
       targs = result["description"].split("<img src=\"")
-      image = targs[1].split("\" />") rescue ["http://www.andybarratt.co.uk/wp-content/uploads/2013/08/Bitcoin-Coin-1024.jpg"]
-      result = { url: result["event_url"], name: result["name"], location: "#{result['venue']['name']}, #{result['venue']['address_1']}, #{result['venue']['city']}", image: "#{image[0]}" }
+      image = targs[1].split("\" />") rescue ["https://unsplash.it/700/450/?random", "https://unsplash.it/g/700/450/"]
+      result = { url: result["event_url"], name: result["name"], location: "#{result['venue']['name']}, #{result['venue']['address_1']}, #{result['venue']['city']}", image: "#{image.sample}" }
       results_set.push(result) if results_set.length < 6
     end
 
