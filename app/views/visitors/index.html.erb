@@ -94,48 +94,17 @@
       <div class="col-md-12">
         <h2 class="page-header text-center" style="font-weight:200;">Bitcoin News</h2>
       </div>
-      <div class="col-md-4 article-padding">
-        <p><strong>Article Title</strong></p>
-        <small><p style="margin-top:-10px"> Publish Date | <a href="#"><em>www.site.com</em></a></a></p></small>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-      </div>
-      <div class="col-md-4 article-padding">
-        <p><strong>Article Title</strong></p>
-        <small><p style="margin-top:-10px"> Publish Date | <a href="#"><em>www.site.com</em></a></a></p></small>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-      </div>
-      <div class="col-md-4 article-padding">
-        <p><strong>Article Title</strong></p>
-        <small><p style="margin-top:-10px"> Publish Date | <a href="#"><em>www.site.com</em></a></a></p></small>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-      </div>
-      <div class="col-md-4 article-padding">
-        <p><strong>Article Title</strong></p>
-        <small><p style="margin-top:-10px"> Publish Date | <a href="#"><em>www.site.com</em></a></a></p></small>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-      </div>
-      <div class="col-md-4 article-padding">
-        <p><strong>Article Title</strong></p>
-        <small><p style="margin-top:-10px"> Publish Date | <a href="#"><em>www.site.com</em></a></a></p></small>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-      </div>
-      <div class="col-md-4 article-padding">
-        <p><strong>Article Title</strong></p>
-        <small><p style="margin-top:-10px"> Publish Date | <a href="#"><em>www.site.com</em></a></p></small>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-      </div>
+      <%= @news.each do |article| %>
+        <!-- article item -->
+        <div class="col-md-4 article-padding">
+          <a href="<%= article[:link] %>"><p><strong><%= article[:title] %></strong></p></a>
+          <small><p style="margin-top:-10px"> <%= article[:date].strftime("Published: %F") %> | <a href="<%= article[:link] %>"><em>Source: CoinDesk</em></a></a></p></small>
+          <p>
+            <%= article[:description] %>
+          </p>
+        </div>
+        <!-- article ends -->
+      <% end %>
     </div>
   </div>
   <!-- /.row -->
