@@ -182,9 +182,9 @@ a > b {
 // map section overrides
 
 .map-row { margin-left: 0; margin-right: 0; }
-.map { margin-left: 0; margin-right: 0;}
-.clear-padding {padding-left: 0; padding-right: 0;}
-.map-footer { height:100px;background: #F58C8D;}
+.map { margin-left: 0; margin-right: 0; }
+.clear-padding { padding-left: 0; padding-right: 0; }
+.map-footer { height:115px;background: #F58C8D; }
 
 // map id height
 
@@ -301,6 +301,27 @@ p.event-body {
 
 .top-clear {
   margin-top: 0px;
+}
+
+// bs panel overrides
+
+.welcome.panel {
+  background-color: $off-white !important;
+  border: 1px solid $light-black !important;
+}
+
+.welcome.panel-default {
+  border-color: $light-black !important;
+
+}
+
+.welcome.panel-heading {
+  color: $off-white !important;
+  background-color: $teal !important;
+  border-color: $light-black !important;
+}
+
+.welcome.panel-body {
 }
 
 // footer
