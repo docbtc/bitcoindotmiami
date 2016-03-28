@@ -96,7 +96,7 @@
       <div class="col-md-12">
         <h2 class="page-header text-center" style="font-weight:200;">Bitcoin News</h2>
       </div>
-      <%= @news.each do |article| %>
+      <% @news.each do |article| %>
         <!-- article item -->
         <div class="col-md-4 article-padding">
           <a href="<%= article[:link] %>"><p><strong><%= article[:title] %></strong></p></a>

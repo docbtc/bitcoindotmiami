@@ -65,8 +65,6 @@ class ApplicationController < ActionController::Base
   end
 
   def news
-    require 'rss'
-    require 'open-uri'
        rss_results = []
        rss = RSS::Parser.parse(open('http://feeds.feedburner.com/CoinDesk?format=xml').read, false).items[0..5]
        rss.each do |result|
