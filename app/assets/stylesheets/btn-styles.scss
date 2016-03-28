@@ -1,0 +1,42 @@
+@import "compass/css3";
+
+// in the view set the "data-text" html selector to the name of the button to be displayed on hover
+
+.button,
+[class*="button-"]{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  margin: 0 1em 1em 0;
+  padding: 0 4em;
+  height: 3.5em;
+  font: 300 1em/3.5em 'Open Sans', sans-serif;
+  text:{
+    decoration: none;
+    shadow: 0 1px 3px rgba(black, .35);
+  }
+  letter-spacing: .08em;
+  color: #fff;
+  background: #0090C0;
+  border: solid 1px #fff;
+  border-radius: 2px;
+  @include transition(.35s ease all);
+
+  &:hover{
+    background: #007DA7;
+    box-shadow: 0 0 3px rgba(black, .5) inset;
+  }
+}
+
+.button-hover{
+
+  &:hover{ line-height: 9em; }
+
+  &:before{
+    content: attr(data-text);
+    color: #DEEFF5;
+    position: absolute;
+    top: -2.75em;
+  }
+}

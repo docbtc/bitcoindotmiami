@@ -9265,6 +9265,47 @@ a:active > .resource-item {
 a:hover {
   text-decoration: none !important;
 }
+/* line 5, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/btn-styles.scss */
+.button,
+[class*="button-"] {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  margin: 0 1em 1em 0;
+  padding: 0 4em;
+  height: 3.5em;
+  font: 300 1em/3.5em 'Open Sans', sans-serif;
+  text-decoration: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  letter-spacing: .08em;
+  color: #fff;
+  background: #0090C0;
+  border: solid 1px #fff;
+  border-radius: 2px;
+  -moz-transition: ease 0.35s all;
+  -o-transition: ease 0.35s all;
+  -webkit-transition: ease 0.35s all;
+  transition: ease 0.35s all;
+}
+/* line 26, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/btn-styles.scss */
+.button:hover,
+[class*="button-"]:hover {
+  background: #007DA7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+/* line 34, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/btn-styles.scss */
+.button-hover:hover {
+  line-height: 9em;
+}
+/* line 36, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/btn-styles.scss */
+.button-hover:before {
+  content: attr(data-text);
+  color: #DEEFF5;
+  position: absolute;
+  top: -2.75em;
+}
 /* required styles */
 /* line 4, /Users/josheche/work/bitcoindotmiami/app/assets/stylesheets/leaflet.css.scss */
 .leaflet-pane,
