@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
     @coinbase_price = coinbase_price
     @meetup_event = meetup_event
     @news = news
+    @leaflet_tiles = leaflet_tiles
+
   end
 
   def coinbase_price
@@ -19,6 +21,18 @@ class ApplicationController < ActionController::Base
     rescue
       return 0
     end
+  end
+
+  def leaflet_tiles
+    results_set = []
+
+    coinmap = HTTParty.get "https://coinmap.org/api/v1/venues"
+    coinmap["venues"].each do |result|
+      result = { name: result["name"], lat: result["lat"], lon: result["lon"], category: result["category"]  }
+      results_set.push(result) if (result[:lon] > -82 && result[:lat] < 28 && result[:lon] < -79 && result[:lat] > 24)
+    end
+
+    return results_set
   end
 
   def meetup_event

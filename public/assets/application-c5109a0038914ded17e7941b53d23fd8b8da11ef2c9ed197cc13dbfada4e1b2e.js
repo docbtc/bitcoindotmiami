@@ -14863,9 +14863,9 @@ L.Map.Sleep = L.Handler.extend({
 
 L.Map.addInitHook('addHandler', 'sleep', L.Map.Sleep);
 $(document).ready(function() {
-
+  // leaflet js
   // init the map bro
-  var map = L.map('mapid').setView([25.789, -80.226], 13);
+  var map = L.map('mapid').setView([25.789, -80.226], 10);
 
   // load up those tiles bro
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -14880,6 +14880,49 @@ $(document).ready(function() {
     accessToken: 'pk.eyJ1Ijoiam9zaGVjaGUiLCJhIjoiY2lsdGxkNDZ6MDA5dnVza3Ntb2k3MG5ucSJ9.dLVTcxnZoBfQ0LLLKQkdaA',
 
   }).addTo(map);
+
+  // init marker icons
+  var BitIcon = L.Icon.extend({
+    options: {
+      iconSize:     [32, 32], // size of the icon
+      iconAnchor:   [16, 32], // point of the icon which will correspond to marker's location
+      shadowAnchor: [4, 62],  // the same for the shadow
+      popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    }
+  });
+
+  // multiple marker icon vars
+  var atmIcon = new BitIcon({
+        iconUrl: "/assets/marker-icon-btc-094df3d36b56286843d77c022ab7b3f3cc98769b4cf5de46a312ee66e3e37a56.png"
+      }),
+
+      btcIcon = new BitIcon({
+        iconUrl: "/assets/marker-icon-btc-094df3d36b56286843d77c022ab7b3f3cc98769b4cf5de46a312ee66e3e37a56.png"
+      }),
+
+      locIcon = new BitIcon({
+        iconUrl: "/assets/marker-icon-btc-094df3d36b56286843d77c022ab7b3f3cc98769b4cf5de46a312ee66e3e37a56.png"
+      });
+
+  var results = JSON.parse(leaflet_js)
+  for (var key in results){
+    L.marker([results[key].lat,results[key].lon], {
+         icon: atmIcon
+    }).bindPopup(results[key].name).addTo(map);
+  }
+
+  // define marker icons and types
+  // L.marker([25.8011498,-80.203074], {
+  //     icon: atmIcon
+  // }).bindPopup("Bitstop // Wynwood").addTo(map);
+  //
+  // L.marker([25.775494,-80.1906012], {
+  //     icon: atmIcon
+  // }).bindPopup("Bitstop // Downtown").addTo(map);
+  //
+  // L.marker([25.606123,-80.3524937], {
+  //     icon: atmIcon
+  // }).bindPopup("Bitstop // Palmetto Bay").addTo(map);
 });
 (function() {
   this.GoogleAnalytics = (function() {
