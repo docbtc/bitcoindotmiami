@@ -11,6 +11,7 @@ gem 'dotenv-rails'
 gem 'gibbon'
 gem 'devise'
 gem 'httparty'
+gem 'compass-rails'
 group :development, :test do
   gem 'byebug'
 end
